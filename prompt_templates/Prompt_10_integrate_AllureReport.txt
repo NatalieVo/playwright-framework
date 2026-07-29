@@ -1,0 +1,21 @@
+Phân tích project Playwright hiện tại [playwright-typescript-framework] và: 
+
+1. Tích hợp Allure Report
+2. Cài package cần thiết
+3. Update playwright.config.ts
+4. Tự động attach screenshot khi fail
+5. Attach video execution
+6. Generate command scripts trong package.json
+7. Verify report chạy thành công
+
+Yêu cầu:
+- Không phá existing config
+- Giữ tương thích GitHub Actions
+- Nếu thiếu dependency thì tự cài
+- Khi chạy test và sinh Allure report, hãy đảm bảo cấu hình Playwright chỉ lưu screenshot và video khi test fail, đồng thời luôn xóa sạch thư mục allure-results cũ trước mỗi lần chạy mới
+- Ghi log các step trong Test Body của Allure report với câu mô tả tiếng anh rõ ràng hơn
+- Đối với những test cases passed thì đính kèm ảnh chụp màn hình vào bước cuối cùng
+- Có nhiều bước trung gian automation trong code bị dư thừa khi hiển thị lên Test Body nên bạn lọc bớt giúp tôi, chỉ giữ lại các bước automation chính theo test cases.
+- Thêm các bước chi tiết automation con bên trong cho bước cha bên ngoài. Các step name detail trong các class page và class test như bạn đã custom cho step cha, dùng tiếng anh rõ ràng.
+- Gắn giá trị locator và giá trị của tham số vào các step cho tôi luôn.
+- Thêm/Cập nhật .github/workflows/playwright.yml để thêm thư viện Allure Report vào project và setup để tạo report xem trực tiếp trên GitHub Actions.

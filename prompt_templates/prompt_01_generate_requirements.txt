@@ -1,11 +1,11 @@
 /generate_requirements_from_website
 
 # CONTEXT
-- Mô tả hệ thống: [Mô tả ngắn gọn về hệ thống hiện tại, module hiện tại]
-- Website URL: [URL_TRANG_WEB]
-- Module Name: [TEN_MODULE]
-- Thông tin đăng nhập: [EMAIL] và [PASSWORD]
+- System description: [Brief description of the current system, current module]
+- Website URL: [WEBSITE_URL]
+- Module Name: [MODULE_NAME]
+- Login credentials: [EMAIL] and [PASSWORD]
 
 # OUTPUT FORMAT
-# [Chọn 1 trong các format: TXT / Markdown (.md)]
-- Xuất tài liệu kết quả cuối cùng ra file Markdown. (vd: requirements_module_name.md)
+# [Choose 1 of the formats: TXT / Markdown (.md)]
+- Export the final result document to a Markdown file. (e.g.: requirements_module_name.md)

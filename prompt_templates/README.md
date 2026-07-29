@@ -1,19 +1,19 @@
-# Prompt Workflow Templates — Có Gọi Workflow
+# Prompt Workflow Templates — With Workflow Calls
 
-Thư mục này chứa các prompt mẫu **đã tích hợp sẵn lệnh gọi workflow** (slash command).
-Khi paste vào Antigravity, agent sẽ tự động load đúng skill và thực thi theo quy trình.
+This folder contains sample prompts that **already have the workflow call (slash command) built in**.
+When pasted into Antigravity, the agent will automatically load the correct skill and execute the process.
 
 ---
 
-## Khác biệt với prompt_template/ gốc
+## Difference from the original prompt_template/
 
-| | `prompt_template/` (gốc) | `prompt_workflow_template/` (đây) |
+| | `prompt_template/` (original) | `prompt_workflow_template/` (this one) |
 |---|---|---|
-| Gọi workflow | Không | Có (dòng đầu tiên) |
-| Agent load skill | Không (dùng context mặc định) | Có (load đúng skill từ workflow) |
-| Phù hợp | Dùng nhanh bất kỳ AI nào | Dùng với Antigravity/Gemini |
+| Calls a workflow | No | Yes (first line) |
+| Agent loads a skill | No (uses default context) | Yes (loads the correct skill from the workflow) |
+| Best suited for | Quick use with any AI | Use with Antigravity/Gemini |
 
-## Danh Sách
+## List
 
 | # | File | Workflow | Skill |
 |---|------|----------|-------|
@@ -28,12 +28,12 @@ Khi paste vào Antigravity, agent sẽ tự động load đúng skill và thực
 | 08 | `prompt_08_analyze_flaky_tests` | `/analyze_flaky_tests` | `flaky_test_analyzer` |
 | 09 | `prompt_09_generate_api_tests` | `/generate_api_tests_from_swagger` | `qa_automation_engineer` |
 
-Lưu ý: prompt_06 (Review Code) không có workflow riêng nên không có trong thư mục này.
+Note: prompt_06 (Review Code) has no dedicated workflow, so it is not included in this folder.
 
-## Cách sử dụng
+## How to use
 
-1. Chọn prompt phù hợp
-2. Mở file .txt
-3. Thay [...] bằng dữ liệu thực tế
-4. Copy toàn bộ nội dung → paste vào Antigravity chat → gửi
-5. Agent tự gọi workflow → load skill → thực thi
+1. Choose the appropriate prompt
+2. Open the .txt file
+3. Replace [...] with real data
+4. Copy the entire content → paste into the Antigravity chat → send
+5. The agent will call the workflow itself → load the skill → execute

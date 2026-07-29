@@ -1,0 +1,32 @@
+{
+  "validUsers": [
+    {
+      "username": "u1",
+      "password": "111111Aa",
+      "role": "admin",
+      "description": "Default admin account"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "username": "u1",
+      "password": "WrongPass@999",
+      "description": "Wrong password"
+    },
+    {
+      "username": "",
+      "password": "111111Aa",
+      "description": "Empty username"
+    },
+    {
+      "username": "u1",
+      "password": "",
+      "description": "Empty password"
+    },
+    {
+      "username": "nonexistent_user_auto",
+      "password": "111111Aa",
+      "description": "Non-existent user"
+    }
+  ]
+}

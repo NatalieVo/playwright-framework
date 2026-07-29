@@ -1,0 +1,53 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - button "Back" [disabled] [ref=f1e5]
+      - button "Forward" [disabled] [ref=f1e9]
+      - button "Up" [disabled] [ref=f1e13]
+      - button "Refresh" [ref=f1e17] [cursor=pointer]
+    - navigation "Breadcrumb" [ref=f1e23]:
+      - generic "Home" [ref=f1e24]
+    - generic [ref=f1e28]:
+      - button "Switch to compact view" [ref=f1e31] [cursor=pointer]
+      - button "Language" [ref=f1e36] [cursor=pointer]
+      - button "Account" [ref=f1e43] [cursor=pointer]
+  - main [ref=f1e47]:
+    - generic [ref=f1e50]:
+      - button "Toggle navigation pane" [pressed] [ref=f1e52] [cursor=pointer]
+      - generic [ref=f1e57]:
+        - button "New Folder (Ctrl+Shift+N)" [ref=f1e58] [cursor=pointer]
+        - button "New File (Ctrl+Shift+F)" [ref=f1e61] [cursor=pointer]
+      - generic [ref=f1e66]:
+        - button "Upload (Ctrl+U)" [ref=f1e67] [cursor=pointer]
+        - button "Download (Ctrl+D)" [disabled] [ref=f1e71]
+      - generic [ref=f1e76]:
+        - button "Cut (Ctrl+X)" [disabled] [ref=f1e77]
+        - button "Copy (Ctrl+C)" [disabled] [ref=f1e83]
+        - button "Paste (Ctrl+V)" [disabled] [ref=f1e87]
+      - generic [ref=f1e92]:
+        - button "Rename (F2)" [disabled] [ref=f1e93]
+        - button "Delete (Del)" [disabled] [ref=f1e98]
+      - generic [ref=f1e103]:
+        - button "Share" [disabled] [ref=f1e104]
+        - button "Share with Password" [disabled] [ref=f1e111]
+      - button "Search (Ctrl+F)" [ref=f1e119] [cursor=pointer]
+    - generic [ref=f1e123]:
+      - generic [ref=f1e127]:
+        - generic [ref=f1e128] [cursor=pointer]:
+          - generic [ref=f1e129]: ▼
+          - generic [ref=f1e133]: Home
+        - generic [ref=f1e134]:
+          - generic [ref=f1e136] [cursor=pointer]:
+            - generic [ref=f1e137]: ▶
+            - generic [ref=f1e141]: New Folder 4
+          - generic [ref=f1e143] [cursor=pointer]:
+            - generic [ref=f1e144]: ▶
+            - img "Shared folder icon" [ref=f1e146]
+            - generic [ref=f1e154]: Shares
+      - generic [ref=f1e156]:
+        - generic [ref=f1e157]:
+          - button "Show upload details" [ref=f1e158] [cursor=pointer]
+          - generic [ref=f1e161]: Uploading...
+          - progressbar "Upload progress" [ref=f1e162]
+          - button "Cancel all uploads" [ref=f1e163] [cursor=pointer]
+        - generic [ref=f1e168]: Loading...

@@ -4,48 +4,85 @@
 - Framework: [Playwright / Selenium / Appium]
 - Language: [TypeScript / Java / Python]
 - Design Pattern: Page Object Model (POM)
-- Mode: FULL (tự inspect UI + sinh code + chạy test + auto-heal)
+- Mode: FULL (auto-inspect UI + generate code + run test + auto-heal)
 
-# HỆ THỐNG
-- URL: [URL ứng dụng]
-- Tài khoản test: [Dùng fixture/config sẵn có / hoặc EMAIL + PASSWORD]
-- Môi trường: [Dev / Staging / Production]
+# SYSTEM
+- URL: [application URL]
+- Test account: [Use existing fixture/config / or EMAIL + PASSWORD]
+- Environment: [Dev / Staging / Production]
 
-# PROJECT (chọn 1 trong 2)
+# PROJECT (choose 1 of 2)
 
-## A. Đã có sẵn source code (EXISTING PROJECT)
+## A. Source code already exists (EXISTING PROJECT)
 - Project path: [path/to/project]
-- Agent PHẢI đọc project structure, base classes, fixtures, config trước khi sinh code
-- Agent PHẢI tuân thủ conventions đã có (naming, folder, patterns)
-- Agent PHẢI reuse base classes, fixtures, utils — KHÔNG tạo trùng
-- Agent PHẢI sinh file đúng vị trí trong project structure hiện tại
+- The agent MUST read the project structure, base classes, fixtures, config before generating code
+- The agent MUST follow existing conventions (naming, folder, patterns)
+- The agent MUST reuse base classes, fixtures, utils — DO NOT create duplicates
+- The agent MUST generate files in the correct location within the current project structure
 
-## B. Chưa có project (NEW PROJECT)
-- Agent tự scaffold structure theo workflow /generate_automation_framework
+## B. No project yet (NEW PROJECT)
+- The agent scaffolds the structure itself following the /generate_automation_framework workflow
 
 # TEST CASES
-[Một trong 3 cách cung cấp test cases:]
+[One of 3 ways to provide test cases:]
 
-## Cách 1: Dán trực tiếp
+## Way 1: Paste directly
 | TC ID | Title | Steps | Expected Result | Priority |
 |---|---|---|---|---|
-| TC01 | Login thành công | 1. Mở trang login 2. Nhập email hợp lệ 3. Nhập password hợp lệ 4. Click Login | Chuyển đến Dashboard | P1 |
-| TC02 | Login sai password | 1. Mở trang login 2. Nhập email hợp lệ 3. Nhập password sai 4. Click Login | Hiển thị thông báo lỗi | P1 |
+| TC01 | Successful login | 1. Open login page 2. Enter valid email 3. Enter valid password 4. Click Login | Navigate to Dashboard | P1 |
+| TC02 | Login with wrong password | 1. Open login page 2. Enter valid email 3. Enter wrong password 4. Click Login | Display error message | P1 |
 
-## Cách 2: File path
-File test cases: [path/to/testcases.md]
+## Way 2: File path
+Test cases file: [path/to/testcases.md]
 
-## Cách 3: URL (Google Sheets, Confluence)
-URL test cases: [https://docs.google.com/spreadsheets/...]
+## Way 3: URL (Google Sheets, Confluence)
+Test cases URL: [https://docs.google.com/spreadsheets/...]
 
 # OUTPUT FORMAT
-- Page Object classes (Sinh code đúng vị trí theo conventions)
-- Test classes (Kế thừa base hoặc fixture sẵn có, Arrange → Act → Assert)
-- Utilities / Data Generators (Reuse hoặc bổ sung mới)
-- Artifact task.md (checklist tiến độ các bước)
-- Kết quả chạy test (PASS/FAIL summary - test phải PASS 2 lần liên tiếp)
+- Page Object classes (Code generated in the correct location following conventions)
+- Test classes (Extend existing base/fixture, Arrange → Act → Assert)
+- Utilities / Data Generators (Reuse or add new ones)
+- Artifact task.md (progress checklist for each step)
+- Test run results (PASS/FAIL summary - test must PASS 2 times in a row)
 
-# GHI CHÚ
-- Agent tự mở browser inspect UI, thu thập locators thực tế
-- Agent tự chạy test và auto-heal nếu FAIL (Rule E3)
-- Nếu existing project: agent đọc code trước → tuân thủ patterns đã có
+# NOTES
+- The agent opens the browser itself to inspect the UI, collecting real locators
+- The agent runs the test itself and auto-heals if it FAILS (Rule E3)
+- If existing project: the agent reads the code first → follows existing patterns
+
+
+
+
+
+/generate_automation_from_testcases
+
+# CONTEXT
+- Framework: [Playwright]
+- Language: [TypeScript]
+- Design Pattern: Page Object Model (POM)
+- Mode: FULL (auto-inspect UI + generate code + run test + auto-heal)
+
+# SYSTEM
+- URL: https://localhost, Click on the Shares folder
+- Test account: u1/111111Aa
+
+# PROJECT (choose 1 of 2)
+- The agent MUST read the project structure, base classes, fixtures, config before generating code
+- The agent MUST follow existing conventions (naming, folder, patterns)
+- The agent MUST reuse base classes, fixtures, utils — DO NOT create duplicates
+- The agent MUST generate files in the correct location within the current project structure
+
+# TEST CASES
+Test cases file: @/d:/AIAntigravityLearning/claude-testing-kit/playwright-framework/Shared_testcases.csv , from tc38 to tc45
+
+# OUTPUT FORMAT
+- Page Object classes (Code generated in the correct location following conventions)
+- Test classes (Extend existing base/fixture, Arrange → Act → Assert)
+- Utilities / Data Generators (Reuse or add new ones)
+- Artifact task.md (progress checklist for each step)
+- Test run results (PASS/FAIL summary - test must PASS 2 times in a row)
+
+# NOTES
+- The agent opens the browser itself to inspect the UI, collecting real locators
+- The agent runs the test itself and auto-heals if it FAILS (Rule E3)
+- If existing project: the agent reads the code first → follows existing patterns

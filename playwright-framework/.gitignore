@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+allure-history/
+.env
+*.log
+.DS_Store
+test-data/_large-assets/
+.claude

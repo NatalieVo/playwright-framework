@@ -1,0 +1,17 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - heading [level=1] [ref=e6]:
+      - img "EnterpriseDT" [ref=e7]
+      - text: Login
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: User name
+        - textbox "User name" [ref=e12]
+      - generic [ref=e13]:
+        - generic [ref=e14]: Password
+        - textbox "Password" [ref=e15]
+    - generic [ref=e16]:
+      - checkbox "Remember me" [ref=e17]
+      - text: Remember me
+    - button "Login" [ref=e18]

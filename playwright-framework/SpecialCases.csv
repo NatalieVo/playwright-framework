@@ -1,0 +1,62 @@
+Test case ID,Test objective,Precondition,Steps,Test data,Expected result,Actual result,Pass/Fail/Not executed/Suspended,Comments
+Special Cases on Home page,,,,,,,,
+CFTP.FILEMANAGER.SHARE.001,Verify Uploading the large file,"- Login as HTTPS method
+- A large file 3GB is available ",Click on the Upload icon on the toolbar,,"""Upload files"" form appears",,,
+,,,Select the large file 3GB which needs to be uploaded,,The file is added to the form,,,
+,,,Click on UPLOAD button,,"The uploading processing bar is shown
+Wait for the time to upload successfully
+The file is uploaded and is shown in the list of files",,,
+CFTP.FILEMANAGER.SHARE.002,Verify Downloading the large file,"- Login as HTTPS method
+- A large file 3GB is uploaded successfully",Select the large file 3GB on the files/folder list,,,,,
+,,,Click on Download icon on the toolbar,,The selected file is downloaded successfully,,,
+CFTP.FILEMANAGER.SHARE.003,Verify Share with password the large file,"- Login as HTTPS method
+- A large file 3GB is uploaded successfully",Select the large file 3GB on the files/folder list,,,,,
+,,,Click on Share with password icon on the toolbar,,Password Protected Share form appears,,,
+,,,Enter the valid password,,,,,
+,,,Click on OK button,,Share form appears,,,
+,,,Click on Ok button,,Go to the Shares folder and check is the file is shared with status password protected,,,
+CFTP.FILEMANAGER.SHARE.004,Verify Share without password the large file,"- Login as HTTPS method
+- A large file 3GB is uploaded successfully",Select the large file 3GB on the files/folder list,,,,,
+,,,Click on Share without password icon on the toolbar,,Share form appears,,,
+,,,Click on Ok button,,Go to the Shares folder and check is the file is shared with status Public,,,
+CFTP.FILEMANAGER.SHARE.005,Verify delete the large file,"- Login as HTTPS method
+- A large file 3GB is uploaded successfully",Select the large file 3GB on the files/folder list,,,,,
+,,,Click on Delete icon on the toolbar,,Confirm Delete form appears,,,
+,,,Click on Ok button,,The selected is deleted successfully,,,
+CFTP.FILEMANAGER.SHARE.006,Verify Uploading the multiple files (10000 files),"- Login as HTTPS method
+- The multiple files (10000 files) are available ",Click on the Upload icon on the toolbar,,"""Upload files"" form appears",,,
+,,,Select the multiple files (10000 files) which need to be uploaded,,The file is added to the form,,,
+,,,Click on UPLOAD button,,The 10000 files are uploaded and is shown in the list of files,,,
+CFTP.FILEMANAGER.SHARE.007,Verify Downloading the multiple files (10000 files),"- Login as HTTPS method
+- The multiple files (10000 files) are uploaded",The multiple files (10000 files) on the files/folder list,,,,,
+,,,Click on Download icon on the toolbar,,The selected files are downloaded successfully,,,
+CFTP.FILEMANAGER.SHARE.008,Verify Share with password for the multiple files (10000 files),"- Login as HTTPS method
+- The multiple files (10000 files) are uploaded",Select multiple files (10000 files) on the files/folder list,,,,,
+,,,Click on Share with password icon on the toolbar,,Password Protected Share form appears,,,
+,,,Enter the valid password,,,,,
+,,,Click on OK button,,Share form appears,,,
+,,,Click on Ok button,,Go to the Shares folder and check is the file is shared with status password protected,,,
+CFTP.FILEMANAGER.SHARE.009,Verify Share without password for the multiple files (10000 files),"- Login as HTTPS method
+- The multiple files (10000 files) are uploaded",Select multiple files (10000 files) on the files/folder list,,,,,
+,,,Click on Share without password icon on the toolbar,,Share form appears,,,
+,,,Click on Ok button,,Go to the Shares folder and check is the file is shared with status Public,,,
+CFTP.FILEMANAGER.SHARE.010,Verify delete for the multiple files (10000 files),"- Login as HTTPS method
+- The multiple files (10000 files) are uploaded",Select multiple files (10000 files) on the files/folder list,,,,,
+,,,Click on Delete icon on the toolbar,,Confirm Delete form appears,,,
+,,,Click on Ok button,,The selected files are deleted successfully,,,
+CFTP.FILEMANAGER.SHARE.011,Verify delete all files and folders by clicking on the select all checkbox (there is no Shares folder on Breakcrumb),"- Login as HTTPS method
+- The multiple files/folders are available in files/folders list",Check the Select all checkbox to select,,,,,
+,,,Click on Delete icon on the toolbar,,Confirm Delete form appears,,,
+,,,Click on Ok button,,All files/folders are deleted successfully,,,
+CFTP.FILEMANAGER.SHARE.012,Verify Shares folder can't be deleted,"- Login as HTTPS method
+- Shares folder is available in files/folders list",Select the Shares folder,,The delete icon on the toolbar is disabled,,,
+,,,Right click on the Shared folder,,The delete icon on the option list is disabled,,,
+CFTP.FILEMANAGER.SHARE.013,Verify delete all files and folders by clicking on the select all checkbox (there is Shares folder on Breakcrumb),"- Login as HTTPS method
+- The multiple files/folders are available in files/folders list","Check the Select all checkbox to select, then uncheck for Shares folder",,,,,
+,,,Click on Delete icon on the toolbar,,Confirm Delete form appears,,,
+,,,Click on Ok button,,All files/folders are deleted successfully,,,
+Special Cases on Shares folder,,,,,,,,
+CFTP.FILEMANAGER.SHARE.014,Verify delete all files and folders by clicking on the select all checkbox on Shares folder,"- Login as HTTPS method
+- Shares folder exists with 10 files/folders shared already",Check the Select all checkbox to select all items,,,,,
+,,,Click on Delete icon on the toolbar,,Confirm Delete form appears,,,
+,,,Click on Ok button,,All files/folders are deleted successfully,,,

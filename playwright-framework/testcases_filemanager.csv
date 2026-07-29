@@ -1,0 +1,448 @@
+﻿TC ID,Module,Test Scenario,Pre-Condition,Test Steps,Test Data,Expected Result,Priority
+CFTP_FILELIST_TC_001,File List Actions,Verify that the file can be opened,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Click to the file which is uploaded to select the file
+2. Right click to show the option list and select Open",N/A,2. The file is openned,High
+CFTP_FILELIST_TC_002,File List Actions,Verify that the option list is opened by double click,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,1. Double click on the uploaded file,N/A,1. The option list is opened,High
+CFTP_FILELIST_TC_003,File List Actions,Verify downloading the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Download""",N/A,"1. ""Option list"" appears
+2. File is downloaded",High
+CFTP_FILELIST_TC_004,File List Actions,Verify renaming the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Rename""
+3. Enter the new name for uploaded file
+4. Click on RENAME button",New name: renamed_file_20260707.txt,"1. ""Option list"" appears
+2. ""Rename"" form appears with the editable name
+4. New name of file is saved and close the form",High
+CFTP_FILELIST_TC_005,File List Actions,Verify cancel renaming the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Rename""
+3. Enter the new name for uploaded file
+4. Click on CANCEL button",New name: renamed_file_20260707.txt,"1. ""Option list"" appears
+2. ""Rename"" form appears with the editable name
+4. Closes the form without saving new name",Medium
+CFTP_FILELIST_TC_006,File List Actions,Verify moving the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Move""
+3. Click on Change button to select the new path for file
+4. Select the new path and Click on SELECT THIS
+5. Click on MOVE button",N/A,"1. ""Option list"" appears
+2. ""Move"" form appears.
+3. ""Select the destination folder"" form appears with new path for selecting
+4. New path is saved in Destination
+5. The file is moved to new folder",High
+CFTP_FILELIST_TC_007,File List Actions,Verify canceling moving the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Move""
+3. Click on Change button to select the new path for file
+4. Select the new path and Click on SELECT THIS
+5. Click on CANCEL button",N/A,"1. ""Option list"" appears
+2. ""Move"" form appears.
+3. ""Select the destination folder"" form appears with new path for selecting
+4. New path is saved in Destination
+5. The form closes and the file is not moved to the new path",Medium
+CFTP_FILELIST_TC_008,File List Actions,Verify Copy the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Copy""
+3. Click on Change button to select the new path for file
+4. Select the new path and Click on SELECT THIS
+5. Click on COPY button",N/A,"1. ""Option list"" appears
+2. ""Copy"" form appears.
+3. ""Select the destination folder"" form appears with new path for selecting
+4. New path is saved in Destination
+5. The file is copied to new folder",High
+CFTP_FILELIST_TC_009,File List Actions,Verify Cancel Copy the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Copy""
+3. Click on Change button to select the new path for file
+4. Select the new path and Click on SELECT THIS
+5. Click on CANCEL button",N/A,"1. ""Option list"" appears
+2. ""Copy"" form appears.
+3. ""Select the destination folder"" form appears with new path for selecting
+4. New path is saved in Destination
+5. The file is not copied to new folder",Medium
+CFTP_FILELIST_TC_010,File List Actions,Verify editing the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Edit""
+3. Edit the content of uploaded file-> Click on SAVE button",N/A,"1. ""Option list"" appears
+2. ""Edit file"" form appears with the editable content
+3. The file is saved with new content",High
+CFTP_FILELIST_TC_011,File List Actions,Verify canceling editing the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Edit""
+3. Edit the content of uploaded file-> Click on CANCEL button",N/A,"1. ""Option list"" appears
+2. ""Edit file"" form appears with the editable content
+3. The file is closed",Medium
+CFTP_FILELIST_TC_012,File List Actions,Verify share (public) the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Share (public)""
+3. Click on COPY then OK button
+4. Paste the URL on the browser",N/A,"1. ""Option list"" appears
+2. ""Share"" form appears with content:""Anyone with the following link can access the file: File"" and Copy button
+3. The file is closed
+4. The file is downloaded now",High
+CFTP_FILELIST_TC_013,File List Actions,Verify share (public) the uploaded file which is already shared,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Share (public)""
+3. Click on OK button
+4. Paste the URL on the browser",N/A,"1. ""Option list"" appears
+2. ""Share(s) already exist"" form appears with confirm message: ""The shares, FileName, already exist. Do you want to overwrite them?""
+3. ""Share"" form appears with content:""Anyone with the following link can access the file: File"" and Copy button
+4. The file is downloaded now",High
+CFTP_FILELIST_TC_014,File List Actions,Verify canceling share (public) the uploaded file which is already shared,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Share (public)""
+3. Click on CANCEL button",N/A,"1. ""Option list"" appears
+2. ""Share(s) already exist"" form appears with confirm message: ""The shares, FileName, already exist. Do you want to overwrite them?""
+3. ""Share(s) already exist"" form closes",Medium
+CFTP_FILELIST_TC_015,File List Actions,Verify share (password) the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Share (password)""
+3. Enter the Password ->Click on SHARE button
+4. Click on COPY then OK button
+5. Paste the URL on the browser",Password: Share@2026,"1. ""Option list"" appears
+2. ""Share (password)"" form appears with only a Password field (no Confirm password field)
+3. ""Share"" form appears with content:""Anyone with the following link can access the file: File"" and Copy button
+4. The file is closed
+5. The file is downloaded now with required password",Critical
+CFTP_FILELIST_TC_016,File List Actions,Verify canceling share (password) the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Share (password)""
+3. Enter the Password ->Click on CANCEL button",Password: Share@2026,"1. ""Option list"" appears
+2. ""Share (password)"" form appears with only a Password field (no Confirm password field)
+3. ""Share"" form appears with content:""Anyone with the following link can access the file: File"" and Copy button",Medium
+CFTP_FILELIST_TC_017,File List Actions,Verify share (password) the uploaded file with invalid password,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Share (password)""
+3. Enter the Password with password has less than 4 characters ->Click on SHARE button","Password: ab1 (only 3 characters, below the 4-character minimum)","1. ""Option list"" appears
+2. ""Share (password)"" form appears with only a Password field (no Confirm password field)
+3. Error message shows: ""Password must be at least 4 characters and may not start or end with a space""",Critical
+CFTP_FILELIST_TC_018,File List Actions,Verify delete the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Delete""
+3. Click on DELETE button",N/A,"1. ""Option list"" appears
+2. ""Confirm"" form appears with confirm message: ""Are you sure to delete FileName?""
+3. The file is deleted",Critical
+CFTP_FILELIST_TC_019,File List Actions,Verify canceling delete the uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file
+2. Click on ""Delete""
+3. Click on CANCEL button",N/A,"1. ""Option list"" appears
+2. ""Confirm"" form appears with confirm message: ""Are you sure to delete FileName?""
+3. The file is not deleted",Medium
+CFTP_BREADCRUMB_TC_001,Breadcrumb,Verify log out by using the icon in the breadcrumb bar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on Login icon in the top right of the page->Select ""Log out""
+2. Click on LOG OUT button",N/A,"1. ""Log out"" form appears with confirm message: ""Are you sure you want to log out?""
+2. Log in form appears",Low
+CFTP_BREADCRUMB_TC_002,Breadcrumb,Verify canceling log out by using the icon in the breadcrumb bar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on Login icon in the top right of the page->Select ""Log out""
+2. Click on CANCEL button",N/A,"1. ""Log out"" form appears with confirm message: ""Are you sure you want to log out?""
+2. User is still on session",Medium
+CFTP_BREADCRUMB_TC_003,Breadcrumb,Verify changing language by using the icon in the breadcrumb bar,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method
+- Files are shown as list","1. Click on Language icon in the top right of the page
+2. Select the Language",N/A,"1. List of language appears
+2. The ""Name"", ""Size"", ""Date"" will be changed to the selected language",Low
+CFTP_BREADCRUMB_TC_004,Breadcrumb,Verify navigating back to the previous folder using the Back icon,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; A folder named ""Shares"" exists at the Home root","1. Double click on the ""Shares"" folder to open it
+2. Click on the Back icon in the top left of the page",N/A,"1. Breadcrumb shows ""Shares""
+2. Breadcrumb returns to ""Home"" and the Back icon becomes disabled",High
+CFTP_BREADCRUMB_TC_005,Breadcrumb,Verify the Back icon is disabled when there is no previous folder in navigation history,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Just logged in with no prior folder navigation,1. Check the state of the Back icon in the top left of the page,N/A,1. The Back icon is disabled and cannot be clicked,Medium
+CFTP_BREADCRUMB_TC_006,Breadcrumb,Verify navigating forward to the next folder using the Forward icon,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; A folder named ""Shares"" exists at the Home root","1. Double click on the ""Shares"" folder to open it
+2. Click on the Back icon to return to ""Home""
+3. Click on the Forward icon in the top left of the page",N/A,"1. Breadcrumb shows ""Shares""
+2. Breadcrumb returns to ""Home"" and the Forward icon becomes enabled
+3. Breadcrumb shows ""Shares"" again",High
+CFTP_BREADCRUMB_TC_007,Breadcrumb,Verify the Forward icon is disabled when there is no forward navigation history,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Just logged in with no prior Back navigation performed,1. Check the state of the Forward icon in the top left of the page,N/A,1. The Forward icon is disabled and cannot be clicked,Medium
+CFTP_BREADCRUMB_TC_008,Breadcrumb,Verify navigating to the parent folder using the Up icon,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; A folder named ""Shares"" exists at the Home root","1. Double click on the ""Shares"" folder to open it
+2. Click on the Up icon in the top left of the page",N/A,"1. Breadcrumb shows ""Shares""
+2. Breadcrumb returns to ""Home"" (the parent folder) and the Up icon becomes disabled",High
+CFTP_BREADCRUMB_TC_009,Breadcrumb,Verify the Up icon is disabled at the Home root folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Currently at the Home root folder,1. Check the state of the Up icon in the top left of the page,N/A,1. The Up icon is disabled and cannot be clicked (Home has no parent folder),Medium
+CFTP_BREADCRUMB_TC_010,Breadcrumb,Verify refreshing the file list using the Refresh icon,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; At least 1 file/folder exists at the Home root,1. Click on the Refresh icon in the top left of the page,N/A,"1. The file list reloads and shows the same files/folders with no duplicates and no error",Medium
+CFTP_BREADCRUMB_TC_011,Breadcrumb,Verify switching to Compact view using the density view icon,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; The file list is currently shown in Comfortable view (default),1. Click on the density view icon (tooltip: ""Switch to compact view"") in the top right of the page,N/A,"1. Row height in the file list decreases and the icon tooltip changes to ""Switch to comfortable view""",Low
+CFTP_BREADCRUMB_TC_012,Breadcrumb,Verify switching to Comfortable view using the density view icon,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; The file list is currently shown in Compact view,1. Click on the density view icon (tooltip: ""Switch to comfortable view"") in the top right of the page,N/A,"1. Row height in the file list increases and the icon tooltip changes to ""Switch to compact view""",Low
+CFTP_BREADCRUMB_TC_013,Breadcrumb,Verify navigating to the Manage Account page using the account icon,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa,"1. Click on the account icon in the top right of the page
+2. Select ""Manage account""",N/A,"1. Menu shows ""Manage account"" and ""Logout"" options
+2. Navigates to the Account Management page showing Username, Password (masked, with ""change password"" link), and Home folder (with ""manage files"" link)",Medium
+CFTP_TOOLBAR_TC_001,Toolbar,Verify uploading the file by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on Upload icon in the top right of the page
+2. Click on ""SELECT FILES""
+3. Select the file which need to be uploaded
+4. Click on UPLOAD button",File upload: sample_upload_20260707.pdf,"1. ""Upload files"" form appears
+2. Browser will be opened
+3. The file is added to the form
+4. The file is uploaded and is shown in the list of files",Low
+CFTP_TOOLBAR_TC_002,Toolbar,Verify cancel uploading the file by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on Upload icon in the top right of the page
+2. Click on ""SELECT FILES""
+3. Select the file which need to be uploaded
+4. Click on CANCEL button",File upload: sample_upload_20260707.pdf,"1. ""Upload files"" form appears
+2. Browser will be opened
+3. The file is added to the form
+4. The file is not uploaded",Medium
+CFTP_TOOLBAR_TC_003,Toolbar,Verify uploading the existing file by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on Upload icon in the top right of the page
+2. Click on ""SELECT FILES""
+3. Select the existing file which need to be uploaded
+4. Check on Checkbox ""Overwrite destination?""
+5. Click on UPLOAD button",File upload: sample_upload_20260707.pdf,"1. ""Upload files"" form appears
+2. Browser will be opened
+3. The file is added to the form
+5. The file is overwrite uploaded",Low
+CFTP_TOOLBAR_TC_004,Toolbar,Verify uploading the existing file (not check the checkbox) by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on Upload icon in the top right of the page
+2. Click on ""SELECT FILES""
+3. Select the existing file which need to be uploaded
+4. Not check on Checkbox ""Overwrite destination?""
+5. Click on UPLOAD button",File upload: sample_upload_20260707.pdf,"1. ""Upload files"" form appears
+2. Browser will be opened
+3. The file is added to the form
+5. Error message shows: ""File(s) or folder(s) already exist""",Low
+CFTP_TOOLBAR_TC_005,Toolbar,Verify creating the file with content by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on New File or Folder icon in the top right of the page->Select ""New File""
+2. Enter content for the new file
+3. Click on CREATE button",File content: Automated test content - do not delete,"1. ""New file"" form appears with default name is ""New file.txt"" and editable content
+3. The file is created with the entered content",Low
+CFTP_TOOLBAR_TC_006,Toolbar,Verify creating the file without content by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on New File or Folder icon in the top right of the page->Select ""New File""
+2. Click on CREATE button",N/A,"1. ""New file"" form appears with default name is ""New file.txt"" and editable content
+2. The file is created with empty content",Low
+CFTP_TOOLBAR_TC_007,Toolbar,Verify canceling creating the file with content by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on New File or Folder icon in the top right of the page->Select ""New File""
+2. Enter content for the new file
+3. Click on CANCEL button",File content: Automated test content - do not delete,"1. ""New file"" form appears with default name is ""New file.txt"" and editable content
+3. The file is not created",Medium
+CFTP_TOOLBAR_TC_008,Toolbar,Verify creating the folder by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on New File or Folder icon in the top right of the page->Select ""New Folder""
+2. Click on CREATE button",N/A,"1. ""New folder"" form appears with default name is ""New folder""
+2. The folder is created",Low
+CFTP_TOOLBAR_TC_009,Toolbar,Verify canceling creating the folder  by using the icon in the toolbar,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Click on New File or Folder icon in the top right of the page->Select ""New Folder""
+2. Click on CANCEL button",N/A,"1. ""New folder"" form appears with default name is ""New folder""
+2. The folder is not created",Medium
+CFTP_TOOLBAR_TC_010,Toolbar,Verify searching file by using the icon in the toolbar,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method
+- Files are shown as list","1. Click on Search icon in the top right of the page
+2. Enter the valid name of the list",N/A,"1. List of language appears
+2. The searched file will be shown",Low
+CFTP_TOOLBAR_TC_011,Toolbar,Verify searching file by using the icon in the toolbar,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method
+- Files are shown as list","1. Click on Search icon in the top right of the page
+2. Enter the invalid name of the list",N/A,"1. List of language appears
+2. The searched file will be NOT shown",Low
+CFTP_TOOLBAR_TC_012,Toolbar,Verify the Download icon is disabled when no file is selected,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file/folder is currently selected,1. Check the state of the Download icon in the toolbar,N/A,1. The Download icon is disabled and cannot be clicked,Medium
+CFTP_TOOLBAR_TC_013,Toolbar,Verify the Cut icon is disabled when no file is selected,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file/folder is currently selected,1. Check the state of the Cut icon in the toolbar,N/A,1. The Cut icon is disabled and cannot be clicked,Medium
+CFTP_TOOLBAR_TC_014,Toolbar,Verify the Copy icon is disabled when no file is selected,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file/folder is currently selected,1. Check the state of the Copy icon in the toolbar,N/A,1. The Copy icon is disabled and cannot be clicked,Medium
+CFTP_TOOLBAR_TC_015,Toolbar,Verify the Paste icon is disabled when no file is selected,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file/folder is currently selected,1. Check the state of the Paste icon in the toolbar,N/A,1. The Paste icon is disabled and cannot be clicked,Medium
+CFTP_TOOLBAR_TC_016,Toolbar,Verify the Rename icon is disabled when no file is selected,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file/folder is currently selected,1. Check the state of the Rename icon in the toolbar,N/A,1. The Rename icon is disabled and cannot be clicked,Medium
+CFTP_TOOLBAR_TC_017,Toolbar,Verify the Delete icon is disabled when no file is selected,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file/folder is currently selected,1. Check the state of the Delete icon in the toolbar,N/A,1. The Delete icon is disabled and cannot be clicked,Medium
+CFTP_TOOLBAR_TC_018,Toolbar,Verify the Share (public) icon is disabled when no file is selected,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file/folder is currently selected,1. Check the state of the Share icon in the toolbar,N/A,1. The Share icon is disabled and cannot be clicked,Medium
+CFTP_TOOLBAR_TC_019,Toolbar,Verify the Share (password) icon is disabled when no file is selected,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file/folder is currently selected,1. Check the state of the Share (password) icon in the toolbar,N/A,1. The Share (password) icon is disabled and cannot be clicked,Medium
+CFTP_TOOLBAR_TC_020,Toolbar,Verify the Download icon becomes enabled after selecting an uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; An uploaded file exists at the Home root,"1. Check the checkbox of the uploaded file to select it
+2. Check the state of the Download icon in the toolbar",N/A,"1. The file's checkbox is checked (selected)
+2. The Download icon becomes enabled and can be clicked",Medium
+CFTP_TOOLBAR_TC_021,Toolbar,Verify the Cut icon becomes enabled after selecting an uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; An uploaded file exists at the Home root,"1. Check the checkbox of the uploaded file to select it
+2. Check the state of the Cut icon in the toolbar",N/A,"1. The file's checkbox is checked (selected)
+2. The Cut icon becomes enabled and can be clicked",Medium
+CFTP_TOOLBAR_TC_022,Toolbar,Verify the Copy icon becomes enabled after selecting an uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; An uploaded file exists at the Home root,"1. Check the checkbox of the uploaded file to select it
+2. Check the state of the Copy icon in the toolbar",N/A,"1. The file's checkbox is checked (selected)
+2. The Copy icon becomes enabled and can be clicked",Medium
+CFTP_TOOLBAR_TC_023,Toolbar,Verify the Rename icon becomes enabled after selecting an uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; An uploaded file exists at the Home root,"1. Check the checkbox of the uploaded file to select it
+2. Check the state of the Rename icon in the toolbar",N/A,"1. The file's checkbox is checked (selected)
+2. The Rename icon becomes enabled and can be clicked",Medium
+CFTP_TOOLBAR_TC_024,Toolbar,Verify the Delete icon becomes enabled after selecting an uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; An uploaded file exists at the Home root,"1. Check the checkbox of the uploaded file to select it
+2. Check the state of the Delete icon in the toolbar",N/A,"1. The file's checkbox is checked (selected)
+2. The Delete icon becomes enabled and can be clicked",Medium
+CFTP_TOOLBAR_TC_025,Toolbar,Verify the Share (public) icon becomes enabled after selecting an uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; An uploaded file exists at the Home root,"1. Check the checkbox of the uploaded file to select it
+2. Check the state of the Share icon in the toolbar",N/A,"1. The file's checkbox is checked (selected)
+2. The Share icon becomes enabled and can be clicked",Medium
+CFTP_TOOLBAR_TC_026,Toolbar,Verify the Share (password) icon becomes enabled after selecting an uploaded file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; An uploaded file exists at the Home root,"1. Check the checkbox of the uploaded file to select it
+2. Check the state of the Share (password) icon in the toolbar",N/A,"1. The file's checkbox is checked (selected)
+2. The Share (password) icon becomes enabled and can be clicked",Medium
+CFTP_TOOLBAR_TC_027,Toolbar,Verify the Paste icon remains disabled after selecting a file when the clipboard is empty,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; An uploaded file exists at the Home root; No file has been Cut or Copied beforehand,"1. Check the checkbox of the uploaded file to select it
+2. Check the state of the Paste icon in the toolbar",N/A,"1. The file's checkbox is checked (selected)
+2. The Paste icon remains disabled because the clipboard is empty (Paste requires a file to be Cut or Copied first, not just selected)",Medium
+CFTP_RIGHTCLICK_TC_001,Right-Click Context Menu,Verify creating the file with content by right click on page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Right click on the page and select ""New file""
+2. Enter content for the new file
+3. Click on CREATE button",File content: Automated test content - do not delete,"1. ""New file"" form appears with default name is ""New file.txt"" and editable content
+3. The file is created with the entered content",High
+CFTP_RIGHTCLICK_TC_002,Right-Click Context Menu,Verify creating the file without content by right click on page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Right click on the page and select ""New file""
+2. Click on CREATE button",N/A,"1. ""New file"" form appears with default name is ""New file.txt"" and editable content
+2. The file is created with empty content",High
+CFTP_RIGHTCLICK_TC_003,Right-Click Context Menu,Verify canceling creating the file with content by right click on page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Right click on the page and select ""New file""
+2. Enter content for the new file
+3. Click on CANCEL button",File content: Automated test content - do not delete,"1. ""New file"" form appears with default name is ""New file.txt"" and editable content
+3. The file is not created",Medium
+CFTP_RIGHTCLICK_TC_004,Right-Click Context Menu,Verify creating the folder by using right click on page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Right click on the page and select ""New folder""
+2. Click on CREATE button",N/A,"1. ""New folder"" form appears with default name is ""New folder""
+2. The folder is not created",High
+CFTP_RIGHTCLICK_TC_005,Right-Click Context Menu,Verify canceling creating the folder  by right click on page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login as HTTPS method,"1. Right click on the page and select ""New folder""
+2. Click on CANCEL button",N/A,"1. ""New folder"" form appears with default name is ""New folder""
+2. The folder is not created",Medium
+CFTP_RIGHTCLICK_TC_006,Right-Click Context Menu,Verify the Paste option is disabled when the clipboard is empty,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; No file has been Cut or Copied beforehand,1. Right click on the page and check the state of the ""Paste"" option,N/A,"1. ""Option list"" appears with ""Paste"" disabled",Medium
+CFTP_RIGHTCLICK_TC_007,Right-Click Context Menu,Verify the Paste option is disabled in the same folder right after copying a file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser,"1. Right click on the uploaded file and select ""Copy""
+2. Right click on the page (same folder) and check the state of the ""Paste"" option",N/A,"1. ""Option list"" appears
+2. ""Option list"" appears with ""Paste"" disabled (pasting into the same folder the file was copied from is not offered)",Medium
+CFTP_RIGHTCLICK_TC_008,Right-Click Context Menu,Verify pasting a copied file into a different folder by right click on page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser; A destination folder exists at the Home root,"1. Right click on the uploaded file and select ""Copy""
+2. Double click on the destination folder to open it
+3. Right click on the page and select ""Paste""",N/A,"1. ""Option list"" appears
+3. ""Paste"" is enabled and the copied file appears in the destination folder; the original file remains in the source folder",High
+CFTP_RIGHTCLICK_TC_009,Right-Click Context Menu,Verify pasting a cut file into a different folder by right click on page (move),CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded the file by HTTPS in browser; A destination folder exists at the Home root,"1. Right click on the uploaded file and select ""Cut""
+2. Double click on the destination folder to open it
+3. Right click on the page and select ""Paste""",N/A,"1. ""Option list"" appears
+3. ""Paste"" is enabled and the file appears in the destination folder; the original file no longer exists in the source folder",High
+CFTP_FOLDER_TC_001,Folder List Actions,Verify that the folder can be opened,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right Click to the folder and select ""Open"" option",N/A,1. Navigate to content of the folder to show its subfolder(s) and file(s),High
+CFTP_FOLDER_TC_002,Folder List Actions,Verify that the folder can be download as ZIP,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right click/Double click to the folder and select ""Download as ZIP"" option",N/A,1. The folder will be downloaded as ZIP file,High
+CFTP_FOLDER_TC_003,Folder List Actions,Verify renaming the folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right click to the folder and select ""Rename"" option
+2. Enter the new name for folder
+3. Click on RENAME button",New name: RenamedFolder_20260707,"1. ""Rename"" form appears with the editable name
+3. New name of folder is saved and close the form",High
+CFTP_FOLDER_TC_004,Folder List Actions,Verify cancel renaming the folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right click to the folder and select ""Rename"" option
+2. Enter the new name for folder
+3. Click on CANCEL button",New name: RenamedFolder_20260707,"1. ""Rename"" form appears with the editable name
+3. New name of folder is NOT saved and close the form",Medium
+CFTP_FOLDER_TC_005,Folder List Actions,Verify moving the folder to another same level folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right click to the folder and select ""Move"" option
+2. Click on Change button to select the new path for file
+3. Select the new folder by click on the SELECT button in the same line of the selected folder
+4. Click on MOVE button",N/A,"1. ""Move"" form appears with the editable name
+2. ""Select the destination folder"" form appears with new folder path for selecting
+3. New path is saved in Destination
+4. The file is moved to new folder",High
+CFTP_FOLDER_TC_006,Folder List Actions,Verify moving the folder to the subfolder of another folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right click to the folder and select ""Move"" option
+2. Click on Change button to select the new path for file
+3. Click on the folder to show its subfolder, select the new folder by click on the SELECT button in the same line of the selected folder
+4. Click on MOVE button",N/A,"1. ""Move"" form appears with the editable name
+2. ""Select the destination folder"" form appears with new folder path for selecting
+3. New path is saved in Destination
+4. The file is moved to new subfolder",High
+CFTP_FOLDER_TC_007,Folder List Actions,Verify canceling moving the folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right click to the folder and select ""Move"" option
+2. Click on Change button to select the new path for file
+3. Select the new folder by click on the SELECT button in the same line of the selected folder
+4. Click on CANCEL button",N/A,"1. ""Move"" form appears with the editable name
+2. ""Select the destination folder"" form appears with new folder path for selecting
+3. New path is saved in Destination
+4. The form closes and the file is not moved to the new path",Medium
+CFTP_FOLDER_TC_008,Folder List Actions,Verify delete the folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right click to the folder and select ""Delete"" option
+2. Click on DELETE button",N/A,"1. ""Confirm"" form appears with confirm message: ""Are you sure to delete FileName?""
+2. The folder is deleted",Critical
+CFTP_FOLDER_TC_009,Folder List Actions,Verify canceling delete the folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Right click to the folder and select ""Delete"" option
+2. Click on CANCEL button",N/A,"1. ""Confirm"" form appears with confirm message: ""Are you sure to delete FileName?""
+2. The folder is not deleted",Medium
+CFTP_MULTISELECT_TC_001,Multi-Select Actions,Verify downloading multiple selected files,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the files by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Download",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. These selected files are downloaded",High
+CFTP_MULTISELECT_TC_002,Multi-Select Actions,Verify moving multiple selected files to a folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Move
+3. Click on Change button then select a folder as destination then click on MOVE button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Move"" form appears
+3. These selected files will be moved to the destination folder",High
+CFTP_MULTISELECT_TC_003,Multi-Select Actions,Verify canceling moving multiple selected files to a folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Move
+3. Click on Change button then select a folder as destination then click on CANCEL button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Move"" form appears
+3. ""Move"" form closes",Medium
+CFTP_MULTISELECT_TC_004,Multi-Select Actions,Verify copying multiple selected files to a folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Copy
+3. Click on Change button then select a folder as destination then click on COPY button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Copy file"" form appears
+3. These selected files will be copied to the destination folder",High
+CFTP_MULTISELECT_TC_005,Multi-Select Actions,Verify canceling copying multiple selected files to a folder,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Copy
+3. Click on Change button then select a folder as destination then click on CANCEL button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Copy file"" form appears
+3. ""Copy file"" form closes",Medium
+CFTP_MULTISELECT_TC_006,Multi-Select Actions,Verify Share (public) for multiple selected files,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Share (public)
+3. Click on OK button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Share"" form appears
+3. ""Share"" form closes and these files are shared to Shares folder",High
+CFTP_MULTISELECT_TC_007,Multi-Select Actions,Verify canceling Share (public) for multiple selected files,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Share (public)
+3. Click on CANCEL button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Share"" form appears
+3. ""Share"" form closes",Medium
+CFTP_MULTISELECT_TC_008,Multi-Select Actions,Verify Share (password) for multiple selected files,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Share (password)
+3. Enter valid password, click on SHARE button
+4. Click on OK button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Share (password)"" form appears
+3. ""Share"" form appears
+4. ""Share"" form closes and these files are shared to Shares folder",Critical
+CFTP_MULTISELECT_TC_009,Multi-Select Actions,Verify canceling Share (password) for multiple selected files,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Share (password)
+3. Click on CANCEL button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Share (password)"" form appears
+3. ""Share (password)"" form closes",Medium
+CFTP_MULTISELECT_TC_010,Multi-Select Actions,Verify Delete for multiple selected files,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Delete
+3. Click on DELETE button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Delete"" form appears with message: ""Are you sure to delete these 2 elements + Details ?""
+3. ""Delete"" form closes and selected files are removed",Critical
+CFTP_MULTISELECT_TC_011,Multi-Select Actions,Verify canceling Delete for multiple selected files,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Uploaded/create the folder by HTTPS in browser,"1. Select multiple files, right click on them
+2. Select Delete
+3. Click on CANCEL button",N/A,"1. Option shows: Download, Move, Copy, Share (public), Share (password) and Delete
+2. ""Delete"" form appears with message: ""Are you sure to delete these 2 elements + Details ?""
+3. ""Delete"" form closes",Medium
+CFTP_ACCOUNT_TC_001,Account Management,Verify that it is able to Change password from Account management,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Enable permit password changes on Users panel (genaral users setting),"1. Go to top of right of the page, click on account icon, click on Manage Account
+2. Click on Change Password
+3. Input Current pasword, New password, New password again, click CHANGE PASWORD button",Current password: OldPass@2026; New password: NewPass@2027; Confirm new password: NewPass@2027,"2. Change Password form appears
+3. Password is changed successfully",Critical
+CFTP_ACCOUNT_TC_002,Account Management,Verify that it is able to cancel Changing password from Account management,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Enable permit password changes on Users panel (genaral users setting),"1. Go to top of right of the page, click on account icon, click on Manage Account
+2. Click on Change Password
+3. Input Current pasword, New password, New password again, click BACK TO MENU button",Current password: OldPass@2026; New password: NewPass@2027; Confirm new password: NewPass@2027,"2. Change Password form appears
+3. Changing pasword is cancelled",Medium
+CFTP_ACCOUNT_TC_003,Account Management,Verify that it shows error when changing password with the one that violates the password policy.,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Enable permit password changes on Users panel (genaral users setting),"1. Go to top of right of the page, click on account icon, click on Manage Account
+2. Click on Change Password
+3. Input Current pasword, Wrong New password, Wrong New password again, click BACK TO MENU button",Current password: OldPass@2026; New password: 123; Confirm new password: 123 (violates password policy),3. Show an error that the password violates the password policy,Critical
+CFTP_ACCOUNT_TC_004,Account Management,Verify that it is able to back to main page from Account management,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Enable permit password changes on Users panel (genaral users setting),"1. Go to top of right of the page, click on account icon, click on Manage Account
+2. Click on Change Password
+3. Click on BACK TO MENU button",N/A,"2. Change Password form appears
+3. Back to main page from Account management",High
+CFTP_SEARCH_TC_001,Search Feature,Verify if the search result is correctly,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Enter the Key search",Search keyword: Report_2026,2. The result is showed correctly,High
+CFTP_SEARCH_TC_002,Search Feature,Verify if the search subfolders result is correctly,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Enter the Key search then check on Sub folders",Search keyword: Report_2026,2. The result is showed correctly,High
+CFTP_SEARCH_TC_003,Search Feature,Verify if the Total number of search records/results should be displayed on page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Enter the Key search then check on Sub folders",Search keyword: Report_2026,2. The result is showed correctly,High
+CFTP_SEARCH_TC_004,Search Feature,"Verify that when user clicks on any link from result and navigates back, then result should be maintained",CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Enter the Key search then check on Sub folders
+3. Select a record to open it
+4. Click on Back arrow of browser to back to the result",Search keyword: Report_2026,"2. The result is showed correctly
+3. The selected folder is opened
+4. The result should be maintained",High
+CFTP_SEARCH_TC_005,Search Feature,Verify that all search box should get cleared on clicking the search icon again,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Enter the Key search then check on Sub folders
+3. Close the search box
+4. Click on the search icon again",Search keyword: Report_2026,"2. The result is showed correctly
+3. The search box is closed
+4. The search keyword should get cleared",Low
+CFTP_SEARCH_TC_006,Search Feature,Verify that user able to delete the search result or not,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Enter the Key search then check on Sub folders
+3. Select a record then delete it",Search keyword: Report_2026,"2. The result is showed correctly
+3. Able to delete",Critical
+CFTP_SEARCH_TC_007,Search Feature,Verify that user able to edit the search result or not,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Enter the Key search then check on Sub folders
+3. Select a record then edit it",Search keyword: Report_2026,"2. The result is showed correctly
+3. Able to edit",High
+CFTP_SEARCH_TC_008,Search Feature,Verify that user able to view the search result or not,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Enter the Key search then check on Sub folders
+3. Select a record then view it",Search keyword: Report_2026,"2. The result is showed correctly
+3. Able to view",High
+CFTP_SEARCH_TC_009,Search Feature,Verify the search functionality when user copy and paste parameter and click on search,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Copy paste parameter to the search box",Search keyword: Report_2026,2. The result is showed correctly,High
+CFTP_SEARCH_TC_010,Search Feature,Verify the search functionality by entering the invalid keyword in search box,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Log in FileManager successfully and there are some created folders available,"1. Click on Search icon on navigaiton bar
+2. Entering the invalid keyword in search box",Search keyword: zzz_no_such_file_999,2. No result is retuned,High
+CFTP_DOWNLOAD_TOOLBAR_TC_001,Download - Toolbar,Verify that it is able to download a file by click on Download button on the Toolbar at the top right of the page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Select a file, click on download button on the toolbar",N/A,2. The selected file is downloaded,High
+CFTP_DOWNLOAD_TOOLBAR_TC_002,Download - Toolbar,Verify that it is able to download multiple files by click on Download button on the Toolbar at the top right of the page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Select multiple files, click on download button on the toolbar",N/A,2. The selected files are downloaded,High
+CFTP_DOWNLOAD_TOOLBAR_TC_003,Download - Toolbar,Verify that it is able to download a folder by click on Download button on the Toolbar at the top right of the page,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Double click on the folder to select it, click on download button on the toolbar",N/A,2. The selected folder is downloaded as a zip folder,High
+CFTP_DOWNLOAD_TOOLBAR_TC_004,Download - Toolbar,Verify that it is able to download the shared file without password,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Share these files without password
+3. Select the Shared without password file, click on Download button on the ToolBar",N/A,3. The shared file is downloaded successfully,Critical
+CFTP_DOWNLOAD_TOOLBAR_TC_005,Download - Toolbar,Verify that it is able to download multiple shared files without password,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Share these files without password
+3. Select multiple Shared without password files, click on Download button on the ToolBar",N/A,3. The shared files are downloaded successfully,Critical
+CFTP_DOWNLOAD_TOOLBAR_TC_006,Download - Toolbar,Verify that it is able to download the shared file with password,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Share these files with password (1111)
+3. Select the Shared with password file, click on Download button on the ToolBar",N/A,3. The shared file is downloaded successfully with inputting password,Critical
+CFTP_DOWNLOAD_TOOLBAR_TC_007,Download - Toolbar,Verify that it is able to download multiple shared files with password,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Share these files with password
+3. Select multiple Shared with password files, click on Download button on the ToolBar",N/A,3. The shared files are downloaded successfully with inputting password,Critical
+CFTP_DOWNLOAD_TOOLBAR_TC_008,Download - Toolbar,Verify whether the Download button is clickable or not.,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,1. Click on the Download button on the toolbar to see if it is clickable,N/A,1. The button is clickable,Low
+CFTP_DOWNLOAD_TOOLBAR_TC_009,Download - Toolbar,Verify if it shows the message when clicking on the download button without selecting any file,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,1. Click on the download button without selecting any file,N/A,1. It shows the message: Please select at least one file or folder,High
+CFTP_DOWNLOAD_TOOLBAR_TC_010,Download - Toolbar,Verify if the downloaded file size is equal to the original file size.,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully
+A file is downloaded successfully",1. Check the size of the downloaded file and original file,N/A,1. They should be the same,High
+CFTP_DOWNLOAD_TOOLBAR_TC_011,Download - Toolbar,Verify if the downloaded file name is the same as the one shown before the download.,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully
+A file is downloaded successfully",1. Check the name of the downloaded file and original file,N/A,1. They should be the same,High
+CFTP_DOWNLOAD_TOOLBAR_TC_012,Download - Toolbar,Verify if after downloading the file if the original file stays as it is.,"CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully
+A file is downloaded successfully",1. Check after downloading the file if the original file stays as it is,N/A,1. The original file stays as it is,High
+CFTP_DOWNLOAD_TOOLBAR_TC_013,Download - Toolbar,Verify if the user was able to open the downloaded file or not.,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Download the file
+2. Click on downloaded file to open it",N/A,"1. File is downloaded successfully
+2. It is able to be openned",High
+CFTP_DOWNLOAD_TOOLBAR_TC_014,Download - Toolbar,Verify the Functionality of Multiple file downloads simultaneously.,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Select multiple files, click on download button on the toolbar",N/A,1. All selected files are downloaded,High
+CFTP_DOWNLOAD_OPTIONLIST_TC_001,Download - Options List,Verify that it is able to download a file by click on Download button on the options list,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Select a file, click on download button on the options list",N/A,2. The selected file is downloaded,High
+CFTP_DOWNLOAD_OPTIONLIST_TC_002,Download - Options List,Verify that it is able to download multiple files by click on Download button on the options list,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Select multiple files, click on download button on the options list",N/A,2. The selected files are downloaded,High
+CFTP_DOWNLOAD_OPTIONLIST_TC_003,Download - Options List,Verify that it is able to download a folder by click on Download button on the options list,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Double click on the folder to select it, click on download button on the options list",N/A,2. The selected folder is downloaded as a zip folder,High
+CFTP_DOWNLOAD_OPTIONLIST_TC_004,Download - Options List,Verify that it is able to download the shared file without password by clicking on the Download on the option list,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Share these files without password
+3. Select the Shared without password file, click on Download button on the options list",N/A,3. The shared file is downloaded successfully,Critical
+CFTP_DOWNLOAD_OPTIONLIST_TC_005,Download - Options List,Verify that it is able to download multiple shared files without password by clicking on the Download on the option list,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Share these files without password
+3. Select multiple Shared without password files, click on Download button on the option list",N/A,3. The shared files are downloaded successfully,Critical
+CFTP_DOWNLOAD_OPTIONLIST_TC_006,Download - Options List,Verify that it is able to download the shared file with password by clicking on the Download on the option list,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Share these files with password (1111)
+3. Select the Shared with password file, click on Download button on the ToolBar",N/A,3. The shared file is downloaded successfully with inputting password,Critical
+CFTP_DOWNLOAD_OPTIONLIST_TC_007,Download - Options List,Verify that it is able to download multiple shared files with password by clicking on the Download on the option list,CompleteFTP has been installed and is running (default settings); FileManager has been opened at https://localhost; Successfully logged in with account u1/111111Aa; Login FileManager successfully,"1. Upload some files/folders
+2. Share these files with password
+3. Select multiple Shared with password files, click on Download button on the ToolBar",N/A,3. The shared files are downloaded successfully with inputting password,Critical

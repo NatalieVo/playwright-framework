@@ -3,36 +3,36 @@
 # CONTEXT
 - Framework: [Playwright (TypeScript) / Selenium (Java) / Appium (Java)]
 - Test Runner: [Playwright Test / TestNG / Pytest]
-- Môi trường: [Local / CI/CD pipeline]
-- Mode: [ANALYZE (chỉ báo cáo) / FIX (báo cáo + tự sửa code)]
+- Environment: [Local / CI/CD pipeline]
+- Mode: [ANALYZE (report only) / FIX (report + auto-fix code)]
 
-# TEST BỊ FLAKY
-[Cung cấp 1 trong các thông tin sau:]
+# FLAKY TEST
+[Provide 1 of the following:]
 
-## Cách 1: File path + error log
+## Way 1: File path + error log
 - Test file: [path/to/test_file.ts]
-- Tần suất fail: [VD: 3/10 lần chạy]
+- Failure frequency: [E.g.: 3/10 runs]
 - Error log:
 ```
-[DÁN ERROR LOG / STACK TRACE VÀO ĐÂY]
+[PASTE ERROR LOG / STACK TRACE HERE]
 ```
 
-## Cách 2: Chỉ file path (agent tự chạy test)
+## Way 2: File path only (agent runs the test itself)
 - Test file: [path/to/test_file.ts]
-- Agent sẽ tự chạy 3 lần để tái hiện lỗi
+- The agent will run it 3 times itself to reproduce the failure
 
-## Cách 3: Source code
+## Way 3: Source code
 ```typescript
-[DÁN SOURCE CODE VÀO ĐÂY]
+[PASTE SOURCE CODE HERE]
 ```
 
 # OUTPUT FORMAT
-1. Bảng Root Cause Analysis:
-   | # | Vị trí | Category | Mô tả | Mức độ | Fix đề xuất |
-2. Code fix cụ thể (code cũ → code mới)
+1. Root Cause Analysis table:
+   | # | Location | Category | Description | Severity | Suggested Fix |
+2. Concrete code fix (old code → new code)
 3. Stability checklist
-4. Kết quả verify (nếu Mode FIX)
+4. Verification results (if Mode FIX)
 
-# GHI CHÚ
-- Mode ANALYZE: Agent chỉ phân tích + báo cáo, không sửa code
-- Mode FIX: Agent phân tích + tự sửa code + chạy verify 3 lần liên tiếp PASS
+# NOTES
+- Mode ANALYZE: The agent only analyzes + reports, does not modify code
+- Mode FIX: The agent analyzes + fixes the code itself + runs verification 3 times in a row until PASS

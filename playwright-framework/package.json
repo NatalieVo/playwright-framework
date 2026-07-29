@@ -1,0 +1,36 @@
+{
+  "name": "playwright-framework",
+  "version": "1.0.0",
+  "description": "E2E Web UI Automation Framework — Playwright Test + TypeScript",
+  "scripts": {
+    "pretest": "node scripts/cleanup-test-data.js",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:auth": "playwright test src/tests/auth",
+    "test:dashboard": "playwright test src/tests/dashboard",
+    "test:filemanager": "playwright test src/tests/file-manager",
+    "test:playwright": "npm run clean:allure && playwright test",
+    "cleanup:test-data": "node scripts/cleanup-test-data.js",
+    "clean:allure": "rimraf allure-results allure-report",
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:clean": "rimraf allure-results allure-report",
+    "allure:redact": "node scripts/redact-allure-secrets.js",
+    "allure:generate": "node scripts/redact-allure-secrets.js && rimraf allure-report && allure generate allure-results --output allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results",
+    "test:allure:full": "playwright test && npm run allure:generate && npm run allure:open",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.0",
+    "allure": "^3.14.3",
+    "allure-playwright": "^3.0.0-beta.4",
+    "dotenv": "^16.4.5",
+    "rimraf": "^6.1.3",
+    "typescript": "^5.4.5"
+  }
+}

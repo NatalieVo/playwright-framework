@@ -1,0 +1,147 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - button "Back" [disabled] [ref=f1e5]
+      - button "Forward" [disabled] [ref=f1e9]
+      - button "Up" [disabled] [ref=f1e13]
+      - button "Refresh" [ref=f1e17] [cursor=pointer]
+    - navigation "Breadcrumb" [ref=f1e23]:
+      - generic "Home" [ref=f1e24]
+    - generic [ref=f1e28]:
+      - button "Switch to compact view" [ref=f1e31] [cursor=pointer]
+      - button "Language" [ref=f1e36] [cursor=pointer]
+      - button "Account" [ref=f1e43] [cursor=pointer]
+  - main [ref=f1e47]:
+    - generic [ref=f1e50]:
+      - button "Toggle navigation pane" [pressed] [ref=f1e52] [cursor=pointer]
+      - generic [ref=f1e57]:
+        - button "New Folder (Ctrl+Shift+N)" [ref=f1e58] [cursor=pointer]
+        - button "New File (Ctrl+Shift+F)" [ref=f1e61] [cursor=pointer]
+      - generic [ref=f1e66]:
+        - button "Upload (Ctrl+U)" [ref=f1e67] [cursor=pointer]
+        - button "Download (Ctrl+D)" [disabled] [ref=f1e71]
+      - generic [ref=f1e76]:
+        - button "Cut (Ctrl+X)" [disabled] [ref=f1e77]
+        - button "Copy (Ctrl+C)" [disabled] [ref=f1e83]
+        - button "Paste (Ctrl+V)" [disabled] [ref=f1e87]
+      - generic [ref=f1e92]:
+        - button "Rename (F2)" [disabled] [ref=f1e93]
+        - button "Delete (Del)" [disabled] [ref=f1e98]
+      - generic [ref=f1e103]:
+        - button "Share" [disabled] [ref=f1e104]
+        - button "Share with Password" [disabled] [ref=f1e111]
+      - button "Search (Ctrl+F)" [ref=f1e119] [cursor=pointer]
+    - generic [ref=f1e123]:
+      - generic [ref=f1e127]:
+        - generic [ref=f1e128] [cursor=pointer]:
+          - generic [ref=f1e129]: ▼
+          - generic [ref=f1e133]: Home
+        - generic [ref=f1e134]:
+          - generic [ref=f1e136] [cursor=pointer]:
+            - generic [ref=f1e137]: ▶
+            - generic [ref=f1e141]: New Folder 4
+          - generic [ref=f1e143] [cursor=pointer]:
+            - generic [ref=f1e144]: ▶
+            - img "Shared folder icon" [ref=f1e146]
+            - generic [ref=f1e154]: Shares
+      - generic [ref=f1e156]:
+        - generic [ref=f1e157]:
+          - button "Show upload details" [ref=f1e158] [cursor=pointer]
+          - generic [ref=f1e161]: Uploading...
+          - progressbar "Upload progress" [ref=f1e162]
+          - button "Cancel all uploads" [ref=f1e163] [cursor=pointer]
+        - table [ref=f1e170]:
+          - rowgroup [ref=f1e171]:
+            - row [ref=f1e172]:
+              - columnheader [ref=f1e173]:
+                - checkbox [ref=f1e174] [cursor=pointer]
+              - columnheader "Name ▲" [ref=f1e175] [cursor=pointer]
+              - columnheader "Size" [ref=f1e176] [cursor=pointer]
+              - columnheader "Date Modified" [ref=f1e177] [cursor=pointer]
+          - rowgroup [ref=f1e178]:
+            - row [ref=f1e179] [cursor=pointer]:
+              - cell [ref=f1e180]:
+                - checkbox [ref=f1e181]
+              - cell "New Folder 4" [ref=f1e182]
+              - cell "-" [ref=f1e187]
+              - cell "7/20/2026 09:56 PM" [ref=f1e188]
+            - row [ref=f1e189] [cursor=pointer]:
+              - cell [ref=f1e190]:
+                - checkbox [ref=f1e191]
+              - cell "Shared folder icon Shares" [ref=f1e192]:
+                - img "Shared folder icon" [ref=f1e194]
+                - generic [ref=f1e202]: Shares
+              - cell "-" [ref=f1e203]
+              - cell "7/14/2026 02:44 PM" [ref=f1e204]
+            - row [ref=f1e205] [cursor=pointer]:
+              - cell [ref=f1e206]:
+                - checkbox [ref=f1e207]
+              - cell "cftp_dl_optlist_shared_1784877118449.txt" [ref=f1e208]
+              - cell "33 B" [ref=f1e214]
+              - cell "7/24/2026 02:11 PM" [ref=f1e215]
+            - row [ref=f1e216] [cursor=pointer]:
+              - cell [ref=f1e217]:
+                - checkbox [ref=f1e218]
+              - cell "cftp_dl_optlist_shared_1784877441168.txt" [ref=f1e219]
+              - cell "33 B" [ref=f1e225]
+              - cell "7/24/2026 02:17 PM" [ref=f1e226]
+            - row [ref=f1e227] [cursor=pointer]:
+              - cell [ref=f1e228]:
+                - checkbox [ref=f1e229]
+              - cell "cftp_dl_optlist_shared_a_1784877180112.txt" [ref=f1e230]
+              - cell "14 B" [ref=f1e236]
+              - cell "7/24/2026 02:13 PM" [ref=f1e237]
+            - row [ref=f1e238] [cursor=pointer]:
+              - cell [ref=f1e239]:
+                - checkbox [ref=f1e240]
+              - cell "cftp_dl_optlist_shared_a_1784877502743.txt" [ref=f1e241]
+              - cell "14 B" [ref=f1e247]
+              - cell "7/24/2026 02:18 PM" [ref=f1e248]
+            - row [ref=f1e249] [cursor=pointer]:
+              - cell [ref=f1e250]:
+                - checkbox [ref=f1e251]
+              - cell "cftp_dl_optlist_shared_b_1784877180112.txt" [ref=f1e252]
+              - cell "14 B" [ref=f1e258]
+              - cell "7/24/2026 02:13 PM" [ref=f1e259]
+            - row [ref=f1e260] [cursor=pointer]:
+              - cell [ref=f1e261]:
+                - checkbox [ref=f1e262]
+              - cell "cftp_dl_optlist_shared_b_1784877502743.txt" [ref=f1e263]
+              - cell "14 B" [ref=f1e269]
+              - cell "7/24/2026 02:18 PM" [ref=f1e270]
+            - row [ref=f1e271] [cursor=pointer]:
+              - cell [ref=f1e272]:
+                - checkbox [ref=f1e273]
+              - cell "cftp_dl_optlist_shared_pw_1784877272755.txt" [ref=f1e274]
+              - cell "42 B" [ref=f1e280]
+              - cell "7/24/2026 02:14 PM" [ref=f1e281]
+            - row [ref=f1e282] [cursor=pointer]:
+              - cell [ref=f1e283]:
+                - checkbox [ref=f1e284]
+              - cell "cftp_dl_optlist_shared_pw_1784877595284.txt" [ref=f1e285]
+              - cell "42 B" [ref=f1e291]
+              - cell "7/24/2026 02:19 PM" [ref=f1e292]
+            - row [ref=f1e293] [cursor=pointer]:
+              - cell [ref=f1e294]:
+                - checkbox [ref=f1e295]
+              - cell "cftp_dl_optlist_shared_pw_a_1784877280029.txt" [ref=f1e296]
+              - cell "23 B" [ref=f1e302]
+              - cell "7/24/2026 02:14 PM" [ref=f1e303]
+            - row [ref=f1e304] [cursor=pointer]:
+              - cell [ref=f1e305]:
+                - checkbox [ref=f1e306]
+              - cell "cftp_dl_optlist_shared_pw_a_1784877602534.txt" [ref=f1e307]
+              - cell "23 B" [ref=f1e313]
+              - cell "7/24/2026 02:20 PM" [ref=f1e314]
+            - row [ref=f1e315] [cursor=pointer]:
+              - cell [ref=f1e316]:
+                - checkbox [ref=f1e317]
+              - cell "cftp_dl_optlist_shared_pw_b_1784877280029.txt" [ref=f1e318]
+              - cell "23 B" [ref=f1e324]
+              - cell "7/24/2026 02:14 PM" [ref=f1e325]
+            - row [ref=f1e326] [cursor=pointer]:
+              - cell [ref=f1e327]:
+                - checkbox [ref=f1e328]
+              - cell "cftp_dl_optlist_shared_pw_b_1784877602534.txt" [ref=f1e329]
+              - cell "23 B" [ref=f1e335]
+              - cell "7/24/2026 02:20 PM" [ref=f1e336]

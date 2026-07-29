@@ -2,18 +2,18 @@
 
 # CONTEXT
 - System type: [Web / Mobile / API]
-- Module: [Tên module cần test]
-- URL (nếu có): [URL hệ thống]
-- Requirement: [DÁN NỘI DUNG REQUIREMENT VÀO ĐÂY / UPLOAD FILE]
+- Module: [Module name to test]
+- URL (if any): [System URL]
+- Requirement: [PASTE THE REQUIREMENT CONTENT HERE / UPLOAD FILE]
 
 # MODE
-# [Chọn 1 trong 2 modes]
-# - QUICK: Sinh test cases nhanh (mặc định nếu không chỉ định)
-# - FULL RBT: Quy trình 6 bước đầy đủ → thay bằng /generate_manual_testcases_rbt
+# [Choose 1 of the 2 modes]
+# - QUICK: Generate test cases quickly (default if not specified)
+# - FULL RBT: Full 6-step process → use /generate_manual_testcases_rbt instead
 
 # OUTPUT FORMAT
-# [Chọn 1 trong các format: CSV / Excel (.xlsx) / TXT / Markdown (.md)]
-- Xuất kết quả ra file CSV. (vd: testcases_module_name.csv)
-- Các cột bắt buộc:
+# [Choose 1 of the formats: CSV / Excel (.xlsx) / TXT / Markdown (.md)]
+- Export the result to a CSV file. (e.g.: testcases_module_name.csv)
+- Required columns:
   TC ID, Module, Test Scenario, Pre-Condition, Test Steps, Test Data, Expected Result, Priority
-- Quy tắc TC ID: [DỰ_ÁN]_[MODULE]_TC_[SỐ] (Ví dụ: CRM_LOGIN_TC_001)
+- TC ID convention: [PROJECT]_[MODULE]_TC_[NUMBER] (Example: CRM_LOGIN_TC_001)
