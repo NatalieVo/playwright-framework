@@ -25,6 +25,10 @@ jobs:
   test:
     name: Run Playwright tests + publish Allure report
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     timeout-minutes: 60
     defaults:
       run:
